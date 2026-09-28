@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Areas de interes:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desarrollo Web / Movil" />
+
+    <CheckBox
+        android:id="@+id/checkRedes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redes y Servidores" />
+
+    <CheckBox
+        android:id="@+id/checkIa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inteligencia Artificial" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Switch
+        android:id="@+id/switchNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activar notificaciones"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textoExperiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nivel de experiencia: 0 / 10"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <SeekBar
+        android:id="@+id/barraExperiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="0" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnCargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargar"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar" />
+    </LinearLayout>
+
+</LinearLayout>
